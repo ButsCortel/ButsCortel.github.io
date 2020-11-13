@@ -3,21 +3,22 @@
     margin: 0;
     padding: 0;
     line-height: 1.6em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;     
 }
+
+html, body{
+    height: 100vh;
+  }
 html {
     width: 100vw;
     overflow-x: hidden;
 }
-html, body{
-    height: 100vh;
+body {
     background-color: #000000;
     background-image: url("images/Large-Triangles.svg");
     background-attachment: fixed;
     color:white;
-  }
+}
 ul {
     list-style: none;
 }
