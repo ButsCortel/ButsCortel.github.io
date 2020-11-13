@@ -15,6 +15,7 @@ html, body{
     height: 100vh;
     background-color: #000000;
     background-image: url("images/Large-Triangles.svg");
+    background-attachment: fixed;
     color:white;
   }
 ul {
@@ -24,9 +25,6 @@ ul {
 .container { 
     width: 90%;
     margin: auto;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     animation-name: fadeIn;
     animation-duration: 1.5s;
     
@@ -100,18 +98,19 @@ header > div {
 header > img {
     border: 3px solid white;
     border-radius: 50%;
-    height: 300px;
+    height: 400px;
+    width: 400px;
 }
 
 
 #seeMore {
     display: block;
     margin: auto;
-    width: 100px;
+    width: 110px;
     background: transparent;
     border: transparent solid;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 #seeMore:hover {
     cursor: pointer;
@@ -133,7 +132,7 @@ header > img {
     margin-right: 20px;
 }
 #aboutArticle {
-    font-size: 1.1em;
+    font-size: 16px;
     padding-bottom: 20px;    
 }
 #about p {
