@@ -7,7 +7,7 @@ const showContent = (target) => {
         const element = elements[i];
         const li = lis[i];
         if (id == i) {
-            li.style.borderBottom = "2px gray solid"
+            li.style.borderBottom = "3px orangered solid"
             element.style.display = "block"
             
         }

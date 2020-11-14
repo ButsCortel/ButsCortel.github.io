@@ -8,6 +8,7 @@
 html {
     width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #000000;
@@ -48,23 +49,25 @@ a {
 }
 a:hover {
     cursor: pointer;
-    color: gray;
+    color: orangered;
 }
 
 .about.nav-active, .projects.nav-active, .resume.nav-active {
-    border-bottom: 3px gray solid;
+    border-bottom: 3px orangered solid;
     height: 50px;
-    color: gray;
+    color: orangered;
 }
 
 
-.home, li > a {
+.home a, li > a {
     padding: 10px;
     margin: auto 5px;
 }
-
-.home {
-    display: inline-block;
+.home a {
+    display: block;
+}
+.home.active a{
+    color: orangered;
 }
 #pages {
     width: 60%;
@@ -144,7 +147,7 @@ header > img {
     justify-content: center;
 }
 .aboutLis:first-child    {
-    border-bottom: 2px solid gray;
+    border-bottom: 3px solid orangered;
 }
 #aboutNav li {
     width: 15%;
@@ -165,7 +168,7 @@ header > img {
     animation: fadeIn 1.5s;
 }
 .projectArt {
-    background-color: white;
+    background-color: rgba(255, 255, 255 , .7);
     height: 300px;
     width: 80%;
     display: flex;
@@ -179,7 +182,7 @@ header > img {
 .projectImg {
     width: 30%;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 600px) {
