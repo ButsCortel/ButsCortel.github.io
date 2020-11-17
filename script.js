@@ -8,10 +8,12 @@ const showContent = (target) => {
         const li = lis[i];
         if (id == i) {
             li.style.borderBottom = "3px orangered solid"
+            li.style.color = "orangered"
             element.style.display = "block"
             
         }
         else {
+            li.style.color = "white"
             li.style.borderBottom = "none"
             element.style.display = "none"
         }

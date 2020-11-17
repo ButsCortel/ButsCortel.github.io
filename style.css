@@ -79,9 +79,7 @@ a:hover {
     text-align: center;
     display: inline-block;
 }
-#pages li:hover {
-    background-color: lightgray;
-}
+
 #pages > li > a {
     display: block;   
 }
@@ -117,7 +115,7 @@ header > img {
 }
 #seeMore:hover {
     cursor: pointer;
-    color: gray;
+    color: orangered;
     
 }
 #about {
@@ -146,9 +144,12 @@ header > img {
     display: flex;
     justify-content: center;
 }
+
 .aboutLis:first-child    {
+    color: orangered;
     border-bottom: 3px solid orangered;
 }
+
 #aboutNav li {
     width: 15%;
     margin: 10px;
@@ -157,7 +158,9 @@ header > img {
 }
 #aboutNav li:hover{
     cursor: pointer;
+    color: orangered !important;
 }
+
 .profile ~ div {
     display: none;
 }
