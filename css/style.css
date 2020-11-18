@@ -12,7 +12,7 @@ html {
 }
 body {
     background-color: #000000;
-    background-image: url("images/Large-Triangles.svg");
+    background-image: url("../images/Large-Triangles.svg");
     background-attachment: fixed;
     color:white;
 }
