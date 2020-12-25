@@ -3,33 +3,38 @@
     margin: 0;
     padding: 0;
     line-height: 1.6em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;     
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 html {
     width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #000000;
     background-image: url("../images/Large-Triangles.svg");
     background-attachment: fixed;
-    color:white;
+    color: white;
 }
+
 ul {
     list-style: none;
 }
 
-.container { 
+.container {
     width: 90%;
     margin: auto;
     animation-name: fadeIn;
     animation-duration: 1.5s;
-}   
-.container > h1 {
+}
+
+.container>h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 nav {
     height: 50px;
     display: flex;
@@ -43,10 +48,11 @@ nav {
     outline: 1px black solid;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: black;   
+    color: black;
 }
+
 a:hover {
     cursor: pointer;
     color: orangered;
@@ -58,21 +64,24 @@ a:hover {
     color: orangered;
 }
 
-
-.home a, li > a {
+.home a, li>a {
     padding: 10px;
     margin: auto 5px;
 }
+
 .home a {
     display: block;
 }
-.home.active a{
+
+.home.active a {
     color: orangered;
 }
+
 #pages {
     width: 60%;
     text-align: right;
 }
+
 #pages li {
     height: 100%;
     width: 15%;
@@ -80,8 +89,8 @@ a:hover {
     display: inline-block;
 }
 
-#pages > li > a {
-    display: block;   
+#pages>li>a {
+    display: block;
 }
 
 header {
@@ -90,19 +99,18 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
-header > div {
+
+header>div {
     width: 50%;
-    
 }
-header > img {
+
+header>img {
     border: 3px solid white;
     border-radius: 50%;
     height: 400px;
     width: 400px;
 }
-
 
 #seeMore {
     display: block;
@@ -113,19 +121,22 @@ header > img {
     color: white;
     font-size: 1.3em;
 }
+
 #seeMore:hover {
     cursor: pointer;
     color: orangered;
-    
 }
+
 #about {
     margin: 20px;
     padding: 20px;
     overflow: auto;
 }
-#about > h1 {
+
+#about>h1 {
     margin-bottom: 20px
 }
+
 #me {
     height: 400px;
     width: 444px;
@@ -133,19 +144,22 @@ header > img {
     float: left;
     margin-right: 20px;
 }
+
 #aboutArticle {
     font-size: 16px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
 }
+
 #about p {
     margin-top: auto;
 }
+
 #aboutNav {
     display: flex;
     justify-content: center;
 }
 
-.aboutLis:first-child    {
+.aboutLis:first-child {
     color: orangered;
     border-bottom: 3px solid orangered;
 }
@@ -156,22 +170,25 @@ header > img {
     font-size: 1.1em;
     text-align: center;
 }
-#aboutNav li:hover{
+
+#aboutNav li:hover {
     cursor: pointer;
     color: orangered !important;
 }
 
-.profile ~ div {
+.profile~div {
     display: none;
 }
+
 .aboutDivs {
     margin: auto;
     width: 90%;
     min-height: 250px;
     animation: fadeIn 1.5s;
 }
+
 .projectArt {
-    background-color: rgba(255, 255, 255 , .7);
+    background-color: rgba(255, 255, 255, .7);
     height: 300px;
     width: 80%;
     display: flex;
@@ -180,18 +197,34 @@ header > img {
     padding: 10px;
     border-radius: 15px;
     color: black;
-
 }
+
 .projectImg {
-    width: 30%;
+    width: 40%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 0 10px;
 }
 
-@media screen and (max-width: 600px) {
- 
+.projectImg:hover {
+    opacity: 0.7
 }
+
+.projectImg img {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {}
+
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
