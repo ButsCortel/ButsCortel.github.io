@@ -53,6 +53,14 @@ nav a {
     color: black;
 }
 
+#email {
+    color: white;
+}
+
+#email:hover {
+    color: gray;
+}
+
 a:hover {
     cursor: pointer;
     color: orangered;
