@@ -67,7 +67,6 @@ a:hover {
 }
 
 .about.nav-active, .projects.nav-active, .resume.nav-active {
-    border-bottom: 3px orangered solid;
     height: 50px;
     color: orangered;
 }
@@ -92,8 +91,8 @@ a:hover {
 
 #pages li {
     height: 100%;
-    width: 15%;
-    text-align: center;
+    /* width: 15%;
+    text-align: center; */
     display: inline-block;
 }
 
@@ -197,7 +196,7 @@ header>img {
 
 .projectArt {
     background-color: rgba(255, 255, 255, .7);
-    height: 300px;
+    min-height: 300px;
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -224,7 +223,69 @@ header>img {
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 890px) {
+    header {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+    }
+    header>div {
+        width: 100%;
+    }
+    header>img {
+        height: auto;
+        width: 100%;
+    }
+    .home>a {
+        text-align: center;
+    }
+    #seeMore {
+        margin-top: 50px;
+    }
+    nav {
+        display: block;
+        height: auto;
+    }
+    #pages {
+        width: 100%;
+        text-align: center;
+    }
+    #pages>li {
+        display: block
+    }
+    #aboutNav {
+        flex-direction: column;
+    }
+    #aboutNav>li {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .projectArt:first-of-type {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .projectArt {
+        flex-direction: column;
+        text-align: center;
+    }
+    .projectArt>div {
+        width: 100%;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 1121px) {
+    #about {
+        text-align: center;
+    }
+    #me {
+        float: none;
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
 
 @keyframes fadeIn {
     from {
