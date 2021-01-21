@@ -24,7 +24,6 @@ ul {
 }
 
 .container {
-    width: 90%;
     margin: auto;
     animation-name: fadeIn;
     animation-duration: 1.5s;
@@ -37,15 +36,18 @@ ul {
 
 nav {
     height: 50px;
-    display: flex;
     position: sticky;
     top: 0;
     z-index: 1;
-    justify-content: space-evenly;
     font-size: 17px;
     font-weight: bold;
     background-color: white;
     outline: 1px black solid;
+}
+
+nav>.container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
@@ -101,7 +103,7 @@ a:hover {
 }
 
 header {
-    height: 80vh;
+    max-height: 800px;
     min-height: 460px;
     display: flex;
     justify-content: space-around;
@@ -293,5 +295,35 @@ header>img {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
     }
 }
