@@ -203,6 +203,7 @@ header>img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-content: space-between;
     margin: 30px auto;
     padding: 10px;
     border-radius: 15px;
