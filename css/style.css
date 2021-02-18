@@ -264,7 +264,7 @@ header>img {
         width: 100%;
         margin: 10px 0;
     }
-    .projectArt:first-of-type {
+    .projectArt:nth-child(even) {
         flex-direction: column-reverse;
         text-align: center;
     }
