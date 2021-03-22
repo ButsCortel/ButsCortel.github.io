@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Butch Cortel</title>
   </head>
@@ -10,12 +14,12 @@
     <nav>
       <div class="container">
         <span class="home active">
-          <a href="/">Home</a>
+          <a href="/">Butch Cortel</a>
         </span>
 
         <ul id="pages">
-          <li><a class="about" href="/pages/about.html">About</a></li>
-          <li><a class="projects" href="/pages/projects.html">Projects</a></li>
+          <li><a class="about" href="#about">About</a></li>
+          <li><a class="projects" href="#projects">Projects</a></li>
         </ul>
       </div>
     </nav>
@@ -29,10 +33,205 @@
             mobile and desktop software development.
           </p>
           <p>You may navigate through for more information!</p>
+          <p>Social media:</p>
+          <ul class="social-media">
+            <li>
+              <a
+                href="https://web.facebook.com/butch.klein.cortel/"
+                class="fa fa-facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/CortelButch"
+                href="#"
+                class="fa fa-twitter"
+              ></a>
+            </li>
+          </ul>
         </div>
         <img src="images\picture.jpg" alt="me" />
       </header>
-      <a id="seeMore" href="pages/about.html">See more!</a>
+      <main>
+        <section id="about">
+          <img id="me" src="../images/me.jpg" alt="me" />
+          <h1>About me</h1>
+          <p>Hi there! I am Butch Cortel.</p>
+          <p>
+            I've been "into" technology for almost five years now (yes, I've
+            included my college years). I first acquired my college diploma way
+            back 2017, wherein I finished Computer Engineering Technology,
+            focusing mainly on embedded systems and electronics only.
+          </p>
+          <p>
+            After working for 2 years as an electronics technician for a
+            semicondutor company, I had decided to pursue a bachelor's degree
+            before moving to the software development industry.
+          </p>
+          <p>
+            Most of my programming experience came from school projects,
+            activities (C, Java) and self-learning (Javascript). I haven't used
+            or learn that much of programming in my previous work.
+          </p>
+          <p>
+            I'm currently working on my personal projects to constantly improve
+            myself.
+          </p>
+        </section>
+        <article id="aboutArticle">
+          <ul id="aboutNav">
+            <li id="0" class="aboutLis" onclick="showContent(this)">Profile</li>
+            <li id="1" class="aboutLis" onclick="showContent(this)">
+              Education
+            </li>
+            <li id="2" class="aboutLis" onclick="showContent(this)">
+              Work Experience
+            </li>
+          </ul>
+
+          <div class="aboutDivs profile">
+            <h2>Profile</h2>
+            <p>Name: Butch Klein A. Cortel</p>
+            <p>Age: 24</p>
+            <p>Residency: Cavite, Ph</p>
+          </div>
+          <div class="aboutDivs">
+            <h2>Education</h2>
+            <ul>
+              <li>
+                Tertiary
+                <ul>
+                  <li>
+                    <p>Computer Engineering Technology (2017)</p>
+                    - Technological University of the Philippines - Cavite
+                    Campus
+                  </li>
+                  <li>
+                    <p>
+                      Bachelor of Technical Teacher Education - Major in
+                      Computer Engineering Technology (2021)
+                    </p>
+                    - Technological University of the Philippines - Cavite
+                    Campus
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="aboutDivs">
+            <h2>Work Experience</h2>
+            <ul>
+              <li>
+                <p>Electronics Technician (2017-2019)</p>
+                Maxim Integrated Philippines
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <section id="projects">
+          <h1>Projects</h1>
+          <article class="projectArt">
+            <div>
+              <h2>FixedIt!</h2>
+              <p>
+                Technologies used: MERN stack, Bootstrap, React-Bootstrap, GCP
+              </p>
+              <br />
+              <p>
+                A CRUD application. This can be used by repair shops internally
+                to manage request queue. A user can create an account as a
+                technician or as a requestor only. They can manage their
+                requests and repairs accordingly. You may click on the image to
+                view the Demo app!
+              </p>
+
+              <p>
+                Github Repos: <br /><a
+                  href="https://github.com/ButsCortel/repair-app-frontend"
+                  target="_blank"
+                  >https://github.com/ButsCortel/repair-app-frontend</a
+                >
+                <a
+                  href="https://github.com/ButsCortel/repair-app-backend"
+                  target="_blank"
+                  >https://github.com/ButsCortel/repair-app-backend</a
+                >
+              </p>
+            </div>
+            <div class="projectImg">
+              <a href="https://fixedit.netlify.app/" target="_blank">
+                <img src="/images/fixedit.png" alt="fixedit" />
+              </a>
+            </div>
+          </article>
+          <article class="projectArt">
+            <div class="projectImg">
+              <a href="https://sarinventory.000webhostapp.com/" target="_blank">
+                <img src="/images/sarinv.png" alt="QuickCheck"
+              /></a>
+            </div>
+            <div>
+              <h2>SarInventory</h2>
+              <p>
+                Technologies used: PHP, Laravel, Tailwind CSS, Cloudinary,
+                Barcode/QR Code
+              </p>
+              <br />
+              <p>
+                A POS system for small business owners. It can record sales and
+                manage inventory as well as show transaction history. It also
+                uses built-in webcam/phone cam instead of a dedicated
+                barcode/qrcode scanner for more flexibility. (Note: Demo Only,
+                has limited features.)
+              </p>
+              <p>
+                Github Repo:
+                <a
+                  href="https://github.com/ButsCortel/SarInventory"
+                  target="_blank"
+                  >https://github.com/ButsCortel/SarInventory</a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="projectArt">
+            <div>
+              <h2>QuickCheck</h2>
+              <p>
+                Technologies used: Java, JavaFX, Java for Android Development
+              </p>
+              <br />
+              <p>
+                A Windows Application. It is a QR Code-based classroom
+                assistance system. Teachers can use this application for
+                managing multiple classrooms (students, attendance and grades).
+                It can also help in administering Quizzes and exams in a
+                classroom without the need for internet. On the students' side,
+                an android app is installed to serve as an "Answer sheet" when
+                conducting an examination/quiz.
+              </p>
+              <p>
+                Github Repo:
+                <a
+                  href="https://github.com/ButsCortel/QuickCheck"
+                  target="_blank"
+                  >https://github.com/ButsCortel/QuickCheck</a
+                >
+              </p>
+            </div>
+            <div class="projectImg">
+              <a
+                href="https://www.youtube.com/watch?v=qiWA5Dho2jY"
+                target="_blank"
+              >
+                <img src="/images/quickcheck.png" alt="QuickCheck"
+              /></a>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
