@@ -8,7 +8,7 @@ const showContent = (target) => {
     if (id == i) {
       li.style.borderBottom = "3px orangered solid";
       li.style.color = "orangered";
-      element.style.display = "block";
+      element.style.display = "flex";
     } else {
       li.style.color = "white";
       li.style.borderBottom = "none";
