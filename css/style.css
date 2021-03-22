@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background-color: #000000;
     background-image: url("../images/Large-Triangles.svg");
     background-attachment: fixed;
@@ -110,7 +111,6 @@ a:hover {
 }
 
 header {
-    max-height: 800px;
     min-height: 460px;
     display: flex;
     justify-content: space-around;
@@ -250,9 +250,24 @@ header>img {
     height: 500px
 }
 
-.social-media {
-    display: flex
+.title-social-media {
+    text-align: center;
 }
+
+.social-media a {
+    margin: 5px 0;
+    color: white;
+    text-align: left;
+}
+
+.social-media a:hover {
+    color: gray;
+}
+
+/* .social-media {
+    display: flex;
+    justify-content: center;
+} */
 
 .fa {
     padding: 10px;
@@ -288,6 +303,82 @@ header>img {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    header {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+    }
+    header>div {
+        width: 100%;
+    }
+    header>img {
+        height: auto;
+        width: 90%;
+    }
+    header>div>ul {
+        text-align: left;
+    }
+    .home>a {
+        text-align: center;
+    }
+    #seeMore {
+        margin-top: 50px;
+    }
+    nav>.container {
+        display: block;
+        height: auto;
+    }
+    #pages {
+        width: 100%;
+        text-align: center;
+    }
+    #pages>li {
+        display: block
+    }
+    #aboutNav {
+        flex-direction: column;
+    }
+    #aboutNav>li {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .projectArt:nth-child(even) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .projectArt {
+        flex-direction: column;
+        text-align: center;
+    }
+    .projectArt>div {
+        width: 100%;
+        word-wrap: break-word;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1121px) {
+    #about {
+        text-align: center;
+    }
+    #me {
+        float: none;
+        width: 90%;
+        height: auto;
+        margin-right: 0;
     }
 }
 
