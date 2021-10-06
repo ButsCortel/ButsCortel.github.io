@@ -233,6 +233,9 @@ header>img {
     display: flex;
     cursor: pointer;
     margin: 0 10px;
+    opacity: 1;
+    transform: scale(1);
+    transition: 500ms ease;
 }
 
 .projectImg:hover {
