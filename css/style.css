@@ -209,6 +209,10 @@ header>img {
     justify-content: center;
 }
 
+.work li {
+    margin: 7px 0;
+}
+
 .projectArt {
     background-color: rgba(255, 255, 255, .7);
     min-height: 300px;
